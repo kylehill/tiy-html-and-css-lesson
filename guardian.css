@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(0, 86, 137);
+  color: white;
+  font-family: "Noto Serif", serif;
+}
+
+.header-row {
+  position: relative;
+}
+
+.header-toprow-icon {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 50px;
+  padding: 5px;
+}
+
+.header-toprow-left {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.header-lefty {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.logo {
+  position: absolute;
+  right: 10px;
+}
+
+.logo-row {
+  height: 76px;
+}
+
+.header-section {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.section-row {
+  background: rgb(1, 90, 138);
+}
+
+.header-sections {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background: rgb(1, 78, 121);
+}
+
+main {
+  font-size: 20px;
+}
+
+.main-row, .cell-row {
+  font-size: 0;
+}
+
+.column {
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px;
+  border: solid 1px black;
+  vertical-align: top;
+}
+
+.columns-1 {
+  width: calc(25% - 20px);
+}
+
+.columns-2 {
+  width: calc(50% - 20px);
+}
+
+.columns-3 {
+  width: calc(75% - 20px);
+}
+
+.one-third {
+  width: calc(33% - 20px);
+}
+
+.two-third {
+  width: calc(67% - 20px);
+}
+
+.title-row {
+  color: rgb(0, 86, 137);
+  padding: 20px;
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  .column {
+    display: block;
+    width: calc(100% - 20px);
+    font-size: 26px;
+  }
+
+  .title-container {
+    position: relative;
+  }
+
+  .text-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
